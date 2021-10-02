@@ -5,13 +5,13 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage Attributes
+      Manage License
       <small>Value</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active"><a href="<?php echo base_url('attributes/') ?>">Attributes</a></li>
-      <li class="active">Attributes Value</li>
+      <li class="active"><a href="<?php echo base_url('attributes/') ?>">License</a></li>
+      <li class="active">License Value</li>
     </ol>
   </section>
 
@@ -23,7 +23,7 @@
 
         <div class="box">
           <div class="box-body">
-            <h4>Attribute name: <?php echo $attribute_data['name']; ?></h4>
+            <h4>License name: <?php echo $attribute_data['name']; ?></h4>
           </div>
         </div>
 
@@ -49,14 +49,14 @@
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Attributes Value</h3>
+            <h3 class="box-title">Manage License Value</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Attribute Value</th>
+                <th>License Value</th>
                 <?php //if(in_array('updateGroup', $user_permission) || in_array('deleteGroup', $user_permission)): ?>
                   <th>Action</th>
                 <?php //endif; ?>
@@ -86,14 +86,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Add Attribute Value</h4>
+        <h4 class="modal-title">Add License Value</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/createValue') ?>" method="post" id="createForm">
 
         <div class="modal-body">
           <div class="form-group">
-            <label for="brand_name">Attribute Value</label>
+            <label for="brand_name">License Value</label>
             <input type="text" class="form-control" id="attribute_value_name" name="attribute_value_name" placeholder="Enter attribute value" autocomplete="off">
           </div>
         </div>
@@ -117,7 +117,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Edit Attribute Value</h4>
+        <h4 class="modal-title">Edit License Value</h4>
       </div>
 
       <form role="form" action="<?php echo base_url('attributes/updateValue') ?>" method="post" id="updateForm">
@@ -126,7 +126,7 @@
           <div id="messages"></div>
 
           <div class="form-group">
-            <label for="edit_brand_name">Attribute Value</label>
+            <label for="edit_brand_name">License Value</label>
             <input type="text" class="form-control" id="edit_attribute_value_name" name="edit_attribute_value_name" placeholder="Enter attribute value" autocomplete="off">
           </div>
         </div>

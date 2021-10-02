@@ -6,11 +6,11 @@
   <section class="content-header">
     <h1>
       Manage
-      <small>Orders</small>
+      <small>Request</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-      <li class="active">Orders</li>
+      <li class="active">Request</li>
     </ol>
   </section>
 
@@ -35,22 +35,22 @@
         <?php endif; ?>
 
         <?php if(in_array('createOrder', $user_permission)): ?>
-          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-primary">Add Order</a>
+          <a href="<?php echo base_url('orders/create') ?>" class="btn btn-primary">Add Request</a>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Orders</h3>
+            <h3 class="box-title">Manage Request</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Bill no</th>
-                <th>Customer Name</th>
-                <th>Customer Phone</th>
+                <th>Request no</th>
+                <th>Staff Name</th>
+                <th>Staff Phone</th>
                 <th>Date Time</th>
                 <th>Total Products</th>
                 <th>Total Amount</th>

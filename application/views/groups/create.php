@@ -6,11 +6,11 @@
     <section class="content-header">
       <h1>
         Manage
-        <small>Groups</small>
+        <small>Department</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">groups</li>
+        <li class="active">department</li>
       </ol>
     </section>
 
@@ -42,7 +42,7 @@
                 <?php echo validation_errors(); ?>
 
                 <div class="form-group">
-                  <label for="group_name">Group Name</label>
+                  <label for="group_name">Department Name</label>
                   <input type="text" class="form-control" id="group_name" name="group_name" placeholder="Enter group name">
                 </div>
                 <div class="form-group">

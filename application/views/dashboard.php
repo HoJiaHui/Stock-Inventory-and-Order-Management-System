@@ -14,7 +14,7 @@
       </ol>
     </section>
 
-<!-- Helpdesk-->
+<!-- Helpdesk-->>	
 <title> Helpdesk </title>
 <script src="js/jquery.dataTables.min.js"></script>
 <script src="js/dataTables.bootstrap.min.js"></script>		
@@ -25,6 +25,7 @@
 <div class="container">	
 	<div class="row home-sections">
 	<h2> Helpdesk </h2>
+  <?php include('templates/menus.php'); ?>	
   </div> 
 	<div class="">   		
 		<p>View and manage tickets that may have responses from support team.</p>		
@@ -45,14 +46,12 @@
 			</thead>
 		</table>
 	</div>
-  
-
+  <?php include('add_ticket_model.php'); ?>
 
     <!-- Main content -->
     <section class="content">
       <!-- Small boxes (Stat box) -->
       <?php if($is_admin == true): ?>
-
         <div class="row">
           <div class="col-lg-3 col-xs-6">
             <!-- small box -->
@@ -75,7 +74,7 @@
               <div class="inner">
                 <h3><?php echo $total_paid_orders ?></h3>
 
-                <p>Total Paid Orders</p>
+                <p>Total Paid Request</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -129,3 +128,6 @@
       $("#dashboardMainMenu").addClass('active');
     }); 
   </script>
+
+  
+
